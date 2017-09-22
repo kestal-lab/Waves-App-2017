@@ -3,8 +3,8 @@
     package="org.bits_waves.waves2017">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -20,11 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".OurTeam" />
         <activity android:name=".RegActivity" />
         <activity android:name=".Events" />
-
+        <activity android:name=".TodaysFixturesFragment"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "790898194518",
+    "firebase_url": "https://waves-2017-97a39.firebaseio.com",
+    "project_id": "waves-2017-97a39",
+    "storage_bucket": "waves-2017-97a39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790898194518:android:77a7d1e1f78767a2",
+        "android_client_info": {
+          "package_name": "org.bits_waves.waves2017"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790898194518-lcg9t2qud3huvjabp40mavqst0rfrpe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.bits_waves.waves2017",
+            "certificate_hash": "088f5764907bdea716ec1fa3da6b0eb9311beee4"
+          }
+        },
+        {
+          "client_id": "790898194518-1rge08dkn06h8kolhbjvuo6sfg31lguo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzeuIAIP9qhYsjrAZ1FERn-0P4Oxuj4x4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790898194518-1rge08dkn06h8kolhbjvuo6sfg31lguo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

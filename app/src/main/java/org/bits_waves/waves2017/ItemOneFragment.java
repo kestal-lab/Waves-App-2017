@@ -3,7 +3,11 @@ package org.bits_waves.waves2017;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -35,34 +39,64 @@ public class ItemOneFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setRetainInstance(true);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        myFragmentView=inflater.inflate(R.layout.fragment_item_one, container, false);
 
-        recyclerView = (RecyclerView) myFragmentView.findViewById(R.id.recycle1);
-        recyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        listItems = new ArrayList<>();
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        View view = inflater.inflate(R.layout.fixtures_new_tabs,container, false);
+        // Setting ViewPager for each Tabs
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+        // Set Tabs inside Toolbar
+        TabLayout tabs = (TabLayout) view.findViewById(R.id.result_tabs);
+        tabs.setupWithViewPager(viewPager);
 
-        adapter = new EventAdapter(listItems,getActivity().getApplicationContext());
 
-        recyclerView.setAdapter(adapter);
+        return view;
+    }
+    private void setupViewPager(ViewPager viewPager) {
 
-        for (int i = 0; i <= 10; i++) {
-            EventItem listItem = new EventItem("lisng " + (i+1),
-                    "Hello","https://www.w3schools.com/css/trolltunga.jpg"
-            );
 
-            listItems.add(listItem);
-        }
-        return myFragmentView;
+        Adapter adapter = new Adapter(getChildFragmentManager());
+        adapter.addFragment(new TodaysFixturesFragment(), "Day 0");
+        adapter.addFragment(new TodaysFixturesFragment(), "Day 1");
+        adapter.addFragment(new TodaysFixturesFragment(), "Day 2");
+        adapter.addFragment(new TodaysFixturesFragment(), "Day 3");
+
+        viewPager.setAdapter(adapter);
+
+
 
     }
+    static class Adapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
 
+        public Adapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
+    }
 }
