@@ -23,7 +23,11 @@
         <activity android:name=".OurTeam" />
         <activity android:name=".RegActivity" />
         <activity android:name=".Events" />
-        <activity android:name=".TodaysFixturesFragment"></activity>
+        <activity android:name=".TodaysFixturesFragment" />
+        <activity android:name=".Day0" />
+        <activity android:name=".Day1" />
+        <activity android:name=".Day2" />
+        <activity android:name=".Day3"></activity>
     </application>
 
 </manifest>

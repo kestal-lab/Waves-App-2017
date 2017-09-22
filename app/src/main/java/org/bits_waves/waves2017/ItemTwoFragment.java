@@ -25,6 +25,7 @@ public class ItemTwoFragment extends Fragment {
     private RecyclerView.Adapter adapter;
     private List<RTDItem> listItems = new ArrayList<>();
     private DatabaseReference mDatabase;
+    private FirebaseDatabase fData;
     private View myFragmentView;
     private String imgURL;
     private int bitIMG;
@@ -36,20 +37,22 @@ public class ItemTwoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         myFragmentView=inflater.inflate(R.layout.fragment_item_two, container, false);
-
+        fData = Utils.getDatabase();
         recyclerView = (RecyclerView) myFragmentView.findViewById(R.id.recycle3);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         listItems = new ArrayList<>();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase = fData.getReference();
+
         adapter = new RTDAdapter(listItems,getActivity().getApplicationContext());
 
         recyclerView.setAdapter(adapter);
@@ -81,6 +84,7 @@ public class ItemTwoFragment extends Fragment {
             }
 
         });
+
 
         return myFragmentView;
     }

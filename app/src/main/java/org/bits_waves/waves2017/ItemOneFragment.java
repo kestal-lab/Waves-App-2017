@@ -61,10 +61,10 @@ public class ItemOneFragment extends Fragment {
 
 
         Adapter adapter = new Adapter(getChildFragmentManager());
-        adapter.addFragment(new TodaysFixturesFragment(), "Day 0");
-        adapter.addFragment(new TodaysFixturesFragment(), "Day 1");
-        adapter.addFragment(new TodaysFixturesFragment(), "Day 2");
-        adapter.addFragment(new TodaysFixturesFragment(), "Day 3");
+        adapter.addFragment(new Day0(), "Day 0");
+        adapter.addFragment(new Day1(), "Day 1");
+        adapter.addFragment(new Day2(), "Day 2");
+        adapter.addFragment(new Day3(), "Day 3");
 
         viewPager.setAdapter(adapter);
 
