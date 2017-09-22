@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context="org.bits_waves.waves2017.ItemTwoFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is the Real Time Database Activity"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle3"
+
+        android:layout_marginBottom="56dp"
+        />
 </RelativeLayout>
