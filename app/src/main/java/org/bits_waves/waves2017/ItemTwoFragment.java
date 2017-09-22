@@ -51,7 +51,7 @@ public class ItemTwoFragment extends Fragment {
         recyclerView.setLayoutManager(mLayoutManager);
         listItems = new ArrayList<>();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mDatabase = fData.getReference();
+        mDatabase = fData.getReference().child("rtd");
 
         adapter = new RTDAdapter(listItems,getActivity().getApplicationContext());
 

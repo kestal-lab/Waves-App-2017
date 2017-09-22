@@ -21,8 +21,8 @@ public class Day1 extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private List<EventItem> listItems = new ArrayList<>();
-    public static TodaysFixturesFragment newInstance() {
-        TodaysFixturesFragment fragment = new TodaysFixturesFragment();
+    public static Day1 newInstance() {
+        Day1 fragment = new Day1();
         return fragment;
     }
 
