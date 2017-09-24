@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,7 +38,15 @@ public class ItemTwoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(CheckNetwork.isInternetAvailable(getActivity().getApplicationContext())) //returns true if internet available
+        {
 
+            //do something. loadwebview.
+        }
+        else
+        {
+            Toast.makeText(getActivity().getApplicationContext(),"No Internet Connection",Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -52,7 +61,7 @@ public class ItemTwoFragment extends Fragment {
         listItems = new ArrayList<>();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         mDatabase = fData.getReference().child("rtd");
-
+        mDatabase.keepSynced(true);
         adapter = new RTDAdapter(listItems,getActivity().getApplicationContext());
 
         recyclerView.setAdapter(adapter);

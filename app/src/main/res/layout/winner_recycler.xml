@@ -14,12 +14,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <View
-                android:layout_width="2dp"
-                android:layout_height="55dp"
-                android:background="#000"
                 android:id="@+id/vertical_line"
-                android:layout_centerInParent="true"/>
+
+                android:layout_width="2dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="#000" />
             <TextView
                 android:id="@+id/winner_name"
                 android:layout_width="120dp"
@@ -37,9 +39,21 @@
                 android:layout_alignParentLeft="true"
                 android:text="Event Name"
                 android:padding="10dp"
+                android:paddingLeft="20dp"
                 android:layout_toLeftOf="@id/vertical_line"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
                 />
+
+            <TextView
+                android:id="@+id/college_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/vertical_line"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/winner_name"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/vertical_line"
+                android:text="BITS Pilani, KK Birla Goa Campus" />
 
 
         </RelativeLayout>
@@ -50,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#000"
+        android:id="@+id/horizontal_line"
         />
 </LinearLayout>
 

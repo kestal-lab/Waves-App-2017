@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -46,7 +47,7 @@ public class RegActivity extends AppCompatActivity {
         fData = Utils.getDatabase();
         mDatabase = fData.getReference().child("Winner");
         adapter = new NewWinnerAdapter(listItems,this);
-
+        mDatabase.keepSynced(true);
         recyclerView.setAdapter(adapter);
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -67,7 +68,15 @@ public class RegActivity extends AppCompatActivity {
             }
 
         });
+        if(CheckNetwork.isInternetAvailable(getApplicationContext())) //returns true if internet available
+        {
 
+            //do something. loadwebview.
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(),"No Internet Connection",Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
