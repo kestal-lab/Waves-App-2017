@@ -7,11 +7,11 @@ package org.bits_waves.waves2017;
 public class RTDItem {
     private String head;
     private String desc;
-    private String imageUrl;
-    public RTDItem(String head, String desc, String imageUrl) {
+
+    public RTDItem(String head, String desc) {
         this.head = head;
         this.desc = desc;
-        this.imageUrl = imageUrl;
+
     }
 
     public String getHead() {
@@ -30,11 +30,4 @@ public class RTDItem {
         this.desc = desc;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
 }

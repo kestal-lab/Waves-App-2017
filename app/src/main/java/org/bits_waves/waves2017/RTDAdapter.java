@@ -33,7 +33,7 @@ public class RTDAdapter extends RecyclerView.Adapter<RTDAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.event_recycler, parent, false);
+                .inflate(R.layout.rtd_recycler, parent, false);
         return new ViewHolder(v);
     }
 
@@ -42,7 +42,7 @@ public class RTDAdapter extends RecyclerView.Adapter<RTDAdapter.ViewHolder> {
         final RTDItem listItem = listItems.get(position);
         holder.head.setText(listItem.getHead());
         holder.desc.setText(listItem.getDesc());
-        Picasso.with(context).load(listItem.getImageUrl()).fit().into(holder.imgViewIcon);
+
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,16 +50,16 @@ public class RTDAdapter extends RecyclerView.Adapter<RTDAdapter.ViewHolder> {
                 context.startActivity(intent);
             }
         });
-        if(position % 2 == 0)
-        {
-            //holder.rootView.setBackgroundColor(Color.BLACK);
-            holder.linearLayout.setBackgroundResource(R.color.black);
-        }
-        else
-        {
-            //holder.rootView.setBackgroundColor(Color.WHITE);
-            holder.linearLayout.setBackgroundResource(R.color.white);
-        }
+//        if(position % 2 == 0)
+//        {
+//            //holder.rootView.setBackgroundColor(Color.BLACK);
+//            holder.linearLayout.setBackgroundResource(R.color.white);
+//        }
+//        else
+//        {
+//            //holder.rootView.setBackgroundColor(Color.WHITE);
+//            holder.linearLayout.setBackgroundResource(R.color.white);
+//        }
     }
 
     @Override
@@ -71,14 +71,14 @@ public class RTDAdapter extends RecyclerView.Adapter<RTDAdapter.ViewHolder> {
         public TextView head;
         public TextView desc;
         public LinearLayout linearLayout;
-        public ImageView imgViewIcon;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             head = (TextView)itemView.findViewById(R.id.heading);
             desc = (TextView)itemView.findViewById(R.id.desc);
-            imgViewIcon = (ImageView) itemView.findViewById(R.id.imageView2);
+
             linearLayout = (LinearLayout) itemView.findViewById(R.id.linear_lay);
         }
     }

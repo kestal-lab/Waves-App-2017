@@ -80,7 +80,7 @@ public class ItemTwoFragment extends Fragment {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     RTDPuller dataPuller = snapshot.getValue(RTDPuller.class);
                     RTDItem listItem =new RTDItem(
-                            dataPuller.getNewshead(), dataPuller.getNewsdesc(), dataPuller.getNewsdesc()
+                            dataPuller.getNewshead(), dataPuller.getNewsdesc()
                     );
                     listItems.add(listItem);
                     Log.d( "Name", dataPuller.getNewshead());
