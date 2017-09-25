@@ -1,26 +1,18 @@
 package org.bits_waves.waves2017;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,13 +20,14 @@ public class ItemOneFragment extends Fragment {
     private View myFragmentView;
     private String imgURL;
     private int bitIMG;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private List<EventItem> listItems = new ArrayList<>();
+
     public static ItemOneFragment newInstance() {
         ItemOneFragment fragment = new ItemOneFragment();
         return fragment;
     }
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
-    private List<EventItem> listItems = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,10 +41,14 @@ public class ItemOneFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fixtures_new_tabs,container, false);
         // Setting ViewPager for each Tabs
-        ViewPager viewPager = (ViewPager) view.findViewById(R.id.viewpager);
+        ViewPager viewPager = view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        TextView title = view.findViewById(R.id.title_text);
+        title.setText("Events");
+        title.setTextColor(getResources().getColor(R.color.black));
         // Set Tabs inside Toolbar
-        TabLayout tabs = (TabLayout) view.findViewById(R.id.result_tabs);
+        TabLayout tabs = view.findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);
 
 

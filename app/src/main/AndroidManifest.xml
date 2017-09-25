@@ -27,7 +27,12 @@
         <activity android:name=".Day0" />
         <activity android:name=".Day1" />
         <activity android:name=".Day2" />
-        <activity android:name=".Day3"></activity>
+        <activity android:name=".Day3" />
+        <activity android:name=".Day1Nights" />
+        <activity android:name=".Day2Nights" />
+        <activity android:name=".Day3Nights" />
+        <activity android:name=".AboutEvent" />
+        <activity android:name=".RuleBook"></activity>
     </application>
 
 </manifest>
