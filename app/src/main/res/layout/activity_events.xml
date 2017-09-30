@@ -8,11 +8,11 @@
     android:fitsSystemWindows="false"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="org.bits_waves.waves2017.Events">
+    tools:context="org.bits_waves.waves2017.Activities.Events">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_home_appbar_layout"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:expanded="true"

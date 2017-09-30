@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.bits_waves.waves2017.ItemThreeFragment">
+    tools:context="org.bits_waves.waves2017.fragment.ItemThreeFragment">
+
     <FrameLayout
         android:id="@+id/frame_layout1"
         android:layout_width="match_parent"
@@ -12,51 +13,222 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:animateLayoutChanges="true">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
-    </android.support.v7.widget.Toolbar>
 
-    <ImageButton
-        android:id="@+id/ourTeam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@color/colorPrimary"
-        android:minHeight="55dp"
-        android:minWidth="55dp"
-        app:srcCompat="@drawable/ic_team" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"></android.support.v7.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="147dp"
-        android:layout_height="45dp"
-        app:srcCompat="@drawable/logo"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"/>
+        <ImageButton
+            android:id="@+id/ourTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:minHeight="55dp"
+            android:minWidth="55dp"
+            app:srcCompat="@drawable/ic_team" />
 
-    <ImageButton
-        android:id="@+id/regBut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:background="@color/colorPrimary"
-        android:minHeight="55dp"
-        android:minWidth="55dp"
-        app:srcCompat="@drawable/ic_pen" />
-    <View android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/drop_shadow"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="147dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/regBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            android:minHeight="55dp"
+            android:minWidth="55dp"
+            app:srcCompat="@drawable/ic_pen" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/drop_shadow" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            android:layout_marginTop="57dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView"
+                        android:layout_alignLeft="@id/myImageView"
+                        android:layout_alignRight="@id/myImageView"
+                        android:layout_alignTop="@id/myImageView"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView5"
+                        android:layout_alignLeft="@id/myImageView5"
+                        android:layout_alignRight="@id/myImageView5"
+                        android:layout_alignTop="@id/myImageView5"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView4"
+                        android:layout_alignLeft="@id/myImageView4"
+                        android:layout_alignRight="@id/myImageView4"
+                        android:layout_alignTop="@id/myImageView4"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView3"
+                        android:layout_alignLeft="@id/myImageView3"
+                        android:layout_alignRight="@id/myImageView3"
+                        android:layout_alignTop="@id/myImageView3"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView2"
+                        android:layout_alignLeft="@id/myImageView2"
+                        android:layout_alignRight="@id/myImageView2"
+                        android:layout_alignTop="@id/myImageView2"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/myImageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/guitar" />
+
+                    <TextView
+                        android:id="@+id/myImageViewText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/myImageView1"
+                        android:layout_alignLeft="@id/myImageView1"
+                        android:layout_alignRight="@id/myImageView1"
+                        android:layout_alignTop="@id/myImageView1"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="On Going Events"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
     </FrameLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is The Home Activity"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>

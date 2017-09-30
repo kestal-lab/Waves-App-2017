@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.bits_waves.waves2017.RegActivity">
+    tools:context="org.bits_waves.waves2017.Activities.RegActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar3"
@@ -13,9 +13,9 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -37,24 +37,24 @@
         android:id="@+id/backit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="?android:attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteY="0dp"
         android:background="@color/colorPrimary"
-        android:minWidth="56dp"
         android:minHeight="56dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:minWidth="56dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="?android:attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteY="0dp" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:id="@+id/recycle5"
 
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="0dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 </android.support.constraint.ConstraintLayout>

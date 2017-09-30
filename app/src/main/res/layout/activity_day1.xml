@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.bits_waves.waves2017.Day1">
+    tools:context="org.bits_waves.waves2017.tabs.Day1">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycle2"
-
-        android:layout_marginBottom="56dp"
-        />
+        android:layout_marginBottom="56dp" />
 </RelativeLayout>

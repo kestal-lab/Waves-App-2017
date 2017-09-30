@@ -13,25 +13,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OurTeam" />
-        <activity android:name=".RegActivity" />
-        <activity android:name=".Events" />
-        <activity android:name=".TodaysFixturesFragment" />
-        <activity android:name=".Day0" />
-        <activity android:name=".Day1" />
-        <activity android:name=".Day2" />
-        <activity android:name=".Day3" />
-        <activity android:name=".Day1Nights" />
-        <activity android:name=".Day2Nights" />
-        <activity android:name=".Day3Nights" />
-        <activity android:name=".AboutEvent" />
+        <activity android:name=".Activities.OurTeam" />
+        <activity android:name=".Activities.RegActivity" />
+        <activity android:name=".Activities.Events" />
+        
+        <activity android:name=".tabs.Day0" />
+        <activity android:name=".tabs.Day1" />
+        <activity android:name=".tabs.Day2" />
+        <activity android:name=".tabs.Day3" />
+        <activity android:name=".tabs.Day1Nights" />
+        <activity android:name=".tabs.Day2Nights" />
+        <activity android:name=".tabs.Day3Nights" />
+        <activity android:name=".Activities.AboutEvent" />
         <activity android:name=".RuleBook"></activity>
     </application>
 

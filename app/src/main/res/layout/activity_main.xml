@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.bits_waves.waves2017.MainActivity">
+    tools:context="org.bits_waves.waves2017.Activities.MainActivity">
 
     <FrameLayout
         android:id="@+id/frame_layout"
@@ -13,19 +13,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:animateLayoutChanges="true">
-
-
-
-
     </FrameLayout>
 
-<View
-    android:layout_width="match_parent"
-    android:layout_height="3dp"
-   android:layout_alignParentBottom="true"
-    android:layout_marginBottom="56dp"
-    android:background="@drawable/up_shadow"/>
-    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/up_shadow" />
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
@@ -34,6 +30,6 @@
         android:background="@color/colorPrimary"
         app:itemIconTint="@color/nav_item_state_list"
         app:itemTextColor="@color/nav_item_state_list"
-        app:menu="@menu/bottom_navigation_items"/>
+        app:menu="@menu/bottom_navigation_items" />
 
 </RelativeLayout>
