@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import org.bits_waves.waves2017.Activities.Dance;
 import org.bits_waves.waves2017.ListItems.EventItem;
 import org.bits_waves.waves2017.Activities.Events;
 import org.bits_waves.waves2017.R;
@@ -49,6 +50,13 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
         holder.event_venue.setText(listItem.getEvent_location());
         holder.event_time.setText(listItem.getEvent_time());
         holder.event_category.setText(listItem.getEvent_category());
+        holder.event_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it45=new Intent(context, Dance.class);
+                context.startActivity(it45);
+            }
+        });
         Picasso.with(context).load(listItem.getImageUrl()).fit().into(holder.imgViewIcon);
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

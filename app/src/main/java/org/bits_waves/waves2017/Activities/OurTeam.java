@@ -15,10 +15,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import org.bits_waves.waves2017.R;
 import org.bits_waves.waves2017.fragment.OurTeam_FragementApp;
@@ -33,10 +35,7 @@ public class OurTeam extends AppCompatActivity {
 
     ImageButton back;
     private SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
+//    private ImageView toolbarImage;
     private ViewPager mViewPager;
     private static final String TAG="Our Team";
 
@@ -46,7 +45,7 @@ public class OurTeam extends AppCompatActivity {
         setContentView(R.layout.activity_our_team);
 
         View v=getWindow().getDecorView();
-        v.setBackgroundColor(Color.CYAN);
+        v.setBackgroundColor(Color.GRAY);
 
         back=(ImageButton) findViewById(R.id.bye);
                 back.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +63,12 @@ public class OurTeam extends AppCompatActivity {
 
         mViewPager=(ViewPager)findViewById(R.id.container2);
         setupViewPager(mViewPager);
+
+ //      toolbarImage = (ImageView) findViewById(R.id.toolbar_image2);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         TabLayout tb = (TabLayout) findViewById(R.id.tabLayout);
         tb.setupWithViewPager(mViewPager);

@@ -1,6 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
@@ -38,6 +43,8 @@ dependencies {
     compile 'com.google.firebase:firebase-core:10.0.1'
     testCompile 'junit:junit:4.12'
 }
+
+
 
 
 

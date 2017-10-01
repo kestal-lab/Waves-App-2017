@@ -29,6 +29,7 @@ public class Events extends AppCompatActivity {
         setContentView(R.layout.activity_events);
         mFragmentsTabLayout = (TabLayout) findViewById(R.id.app_bar_home_tabs);
         mFragmentsViewPager = (ViewPager) findViewById(R.id.app_bar_home_viewpager);
+
         toolbarImage = (ImageView) findViewById(R.id.toolbar_image);
         Toolbar mToolbar = (Toolbar) findViewById(R.id.app_bar_home_toolbar);
         setSupportActionBar(mToolbar);

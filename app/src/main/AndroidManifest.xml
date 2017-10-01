@@ -23,7 +23,6 @@
         <activity android:name=".Activities.OurTeam" />
         <activity android:name=".Activities.RegActivity" />
         <activity android:name=".Activities.Events" />
-        
         <activity android:name=".tabs.Day0" />
         <activity android:name=".tabs.Day1" />
         <activity android:name=".tabs.Day2" />
@@ -32,7 +31,9 @@
         <activity android:name=".tabs.Day2Nights" />
         <activity android:name=".tabs.Day3Nights" />
         <activity android:name=".Activities.AboutEvent" />
-        <activity android:name=".RuleBook"></activity>
+        <activity android:name=".RuleBook" />
+        <activity android:name=".Activities.Dance3" />
+        <activity android:name=".Activities.Dance"></activity>
     </application>
 
 </manifest>

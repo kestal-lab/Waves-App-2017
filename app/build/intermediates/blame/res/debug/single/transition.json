@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Keshav\\Waves-App-2017\\app\\build\\intermediates\\res\\merged\\debug\\transition\\left_to_right.xml",
+        "source": "C:\\Users\\Keshav\\Waves-App-2017\\app\\src\\main\\res\\transition\\left_to_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keshav\\Waves-App-2017\\app\\build\\intermediates\\res\\merged\\debug\\transition\\right_to_left.xml",
+        "source": "C:\\Users\\Keshav\\Waves-App-2017\\app\\src\\main\\res\\transition\\right_to_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keshav\\Waves-App-2017\\app\\build\\intermediates\\res\\merged\\debug\\transition\\exit.xml",
+        "source": "C:\\Users\\Keshav\\Waves-App-2017\\app\\src\\main\\res\\transition\\exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Keshav\\Waves-App-2017\\app\\build\\intermediates\\res\\merged\\debug\\transition\\enter.xml",
+        "source": "C:\\Users\\Keshav\\Waves-App-2017\\app\\src\\main\\res\\transition\\enter.xml"
+    }
+]
