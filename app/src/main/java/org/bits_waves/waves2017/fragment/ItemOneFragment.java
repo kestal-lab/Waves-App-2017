@@ -53,7 +53,7 @@ public class ItemOneFragment extends Fragment {
         Toolbar toolbar = view.findViewById(R.id.toolbar);
         TextView title = view.findViewById(R.id.title_text);
         title.setText("Events");
-        title.setTextColor(getResources().getColor(R.color.black));
+        title.setTextColor(getResources().getColor(R.color.white));
         // Set Tabs inside Toolbar
         TabLayout tabs = view.findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);

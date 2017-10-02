@@ -34,10 +34,11 @@ public class Day1Nights extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_day1_nights, container, false);
         viewPager = view.findViewById(R.id.viewPager);
-        CircleIndicator indicator = view.findViewById(R.id.indicator);
         ViewPagerAdapterOne viewPagerAdapterOne = new ViewPagerAdapterOne(getContext());
-        indicator.setViewPager(viewPager);
         viewPager.setAdapter(viewPagerAdapterOne);
+        CircleIndicator indicator = view.findViewById(R.id.indicator);
+        indicator.setViewPager(viewPager);
+        viewPagerAdapterOne.registerDataSetObserver(indicator.getDataSetObserver());
 
 
         return view;

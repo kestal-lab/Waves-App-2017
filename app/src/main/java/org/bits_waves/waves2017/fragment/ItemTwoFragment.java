@@ -1,14 +1,16 @@
 package org.bits_waves.waves2017.fragment;
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -60,10 +62,16 @@ public class ItemTwoFragment extends Fragment {
                              Bundle savedInstanceState) {
         myFragmentView=inflater.inflate(R.layout.fragment_item_two, container, false);
         fData = Utils.getDatabase();
-        recyclerView = (RecyclerView) myFragmentView.findViewById(R.id.recycle3);
+        recyclerView = myFragmentView.findViewById(R.id.recycle3);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
+
+        Toolbar toolbar = myFragmentView.findViewById(R.id.toolbar);
+        TextView title = myFragmentView.findViewById(R.id.title_text);
+        title.setText("Realtime Database");
+        title.setTextColor(getResources().getColor(R.color.white));
+
         listItems = new ArrayList<>();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         mDatabase = fData.getReference().child("rtd");

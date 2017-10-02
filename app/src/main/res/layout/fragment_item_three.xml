@@ -76,7 +76,7 @@
                         android:id="@+id/myImageView"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText"
@@ -103,7 +103,7 @@
                         android:id="@+id/myImageView5"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText5"
@@ -130,7 +130,7 @@
                         android:id="@+id/myImageView4"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText4"
@@ -157,7 +157,7 @@
                         android:id="@+id/myImageView3"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText3"
@@ -184,7 +184,7 @@
                         android:id="@+id/myImageView2"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText2"
@@ -211,7 +211,7 @@
                         android:id="@+id/myImageView1"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/guitar" />
+                        android:src="@drawable/ic_speaker" />
 
                     <TextView
                         android:id="@+id/myImageViewText1"
