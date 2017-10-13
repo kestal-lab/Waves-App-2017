@@ -46,7 +46,7 @@ public class ItemOneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fixtures_new_tabs,container, false);
+        View view = inflater.inflate(R.layout.events_tabs,container, false);
         // Setting ViewPager for each Tabs
         ViewPager viewPager = view.findViewById(R.id.viewpager);
         setupViewPager(viewPager);

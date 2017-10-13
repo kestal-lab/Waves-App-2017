@@ -31,8 +31,8 @@
         <activity android:name=".tabs.Day1Nights" />
         <activity android:name=".tabs.Day2Nights" />
         <activity android:name=".tabs.Day3Nights" />
-        <activity android:name=".Activities.AboutEvent" />
-        <activity android:name=".RuleBook"></activity>
+        <activity android:name=".tabs.AboutEvent" />
+        <activity android:name=".tabs.RuleBook"></activity>
 
         <service
             android:name=".FirebaseMessagingService">

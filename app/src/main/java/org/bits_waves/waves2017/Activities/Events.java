@@ -17,9 +17,10 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import org.bits_waves.waves2017.Activities.AboutEvent;
+import org.bits_waves.waves2017.tabs.AboutEvent;
 import org.bits_waves.waves2017.R;
-import org.bits_waves.waves2017.RuleBook;
+import org.bits_waves.waves2017.tabs.RuleBook;
+import org.bits_waves.waves2017.tabs.Schedule;
 
 public class Events extends AppCompatActivity {
     private TabLayout mFragmentsTabLayout;
@@ -93,10 +94,13 @@ public class Events extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
+
                     return new AboutEvent();
                 case 1:
-                default:
                     return new RuleBook();
+                case 2:
+                default:
+                    return new Schedule();
 
             }
         }
