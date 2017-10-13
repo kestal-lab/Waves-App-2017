@@ -42,14 +42,6 @@ public class RTDAdapter extends RecyclerView.Adapter<RTDAdapter.ViewHolder> {
         final RTDItem listItem = listItems.get(position);
         holder.head.setText(listItem.getHead());
         holder.desc.setText(listItem.getDesc());
-
-        holder.linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, Events.class);
-                context.startActivity(intent);
-            }
-        });
 //        if(position % 2 == 0)
 //        {
 //            //holder.rootView.setBackgroundColor(Color.BLACK);

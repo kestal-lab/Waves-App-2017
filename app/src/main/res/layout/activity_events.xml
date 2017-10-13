@@ -22,7 +22,7 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/app_bar_home_collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="270dp"
+            android:layout_height="254dp"
             app:contentScrim="?colorPrimary"
             app:expandedTitleTextAppearance="@android:color/transparent"
             app:layout_scrollFlags="scroll|enterAlwaysCollapsed|exitUntilCollapsed|snap"
@@ -44,8 +44,8 @@
                 <android.support.design.widget.TabLayout
                     android:id="@+id/app_bar_home_tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="72dp"
-                    android:layout_below="@+id/title_event"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/toolbar_image"
                     app:layout_collapseMode="pin"
                     app:layout_scrollFlags="scroll|enterAlways"
                     app:tabGravity="center"
@@ -57,17 +57,18 @@
                     android:id="@+id/toolbar_image"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_gravity="top" />
+                    android:layout_gravity="top"
+                    />
 
                 <TextView
                     android:id="@+id/title_event"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/toolbar_image"
+                    android:layout_marginTop="160dp"
                     android:text="Title"
-                    android:textAlignment="center"
+                    android:paddingLeft="10dp"
                     android:textColor="#ffffff"
-                    android:textSize="22dp" />
+                    android:textSize="28dp" />
 
 
             </RelativeLayout>

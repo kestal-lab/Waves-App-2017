@@ -13,6 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import org.bits_waves.waves2017.Activities.AboutEvent;
 import org.bits_waves.waves2017.R;
@@ -22,6 +25,9 @@ public class Events extends AppCompatActivity {
     private TabLayout mFragmentsTabLayout;
     private ViewPager mFragmentsViewPager;
     private ImageView toolbarImage;
+    private TextView event_name;
+    private String event_name_string;
+    private String event_img_string;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +37,9 @@ public class Events extends AppCompatActivity {
         mFragmentsViewPager = (ViewPager) findViewById(R.id.app_bar_home_viewpager);
         toolbarImage = (ImageView) findViewById(R.id.toolbar_image);
         Toolbar mToolbar = (Toolbar) findViewById(R.id.app_bar_home_toolbar);
+        event_name = (TextView) findViewById(R.id.title_event);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         if (mToolbar != null) {
             mToolbar.setNavigationOnClickListener(
@@ -55,7 +62,22 @@ public class Events extends AppCompatActivity {
             getWindow().setNavigationBarColor(colorPrimary);
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
-        toolbarImage.setImageResource(R.drawable.ic_hand);
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                event_name_string= null;
+                event_img_string = null;
+            } else {
+                event_name_string= extras.getString("event_name");
+                event_img_string=extras.getString("event_image");
+            }
+        } else {
+            event_img_string= (String) savedInstanceState.getSerializable("event_image");
+            event_name_string = (String) savedInstanceState.getSerializable("event_name");
+        }
+//        toolbarImage.setImageResource(R.drawable.ic_hand);
+        Picasso.with(this).load(event_img_string).fit().into(toolbarImage);
+        event_name.setText(event_name_string);
         mFragmentsViewPager.setAdapter(new SectionsPagerAdapter(getSupportFragmentManager()));
         mFragmentsTabLayout.setupWithViewPager(mFragmentsViewPager);
 
