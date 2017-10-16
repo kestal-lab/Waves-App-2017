@@ -33,11 +33,17 @@ import java.util.List;
 public class OurTeam extends AppCompatActivity {
 
 
-    ImageButton back;
+    private ImageButton back;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     //    private ImageView toolbarImage;
     private ViewPager mViewPager;
     private static final String TAG="Our Team";
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.transition.left_to_right,R.transition.right_to_left);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,13 +53,13 @@ public class OurTeam extends AppCompatActivity {
         View v=getWindow().getDecorView();
         v.setBackgroundColor(Color.GRAY);
 
-        back=(ImageButton) findViewById(R.id.bye);
+        back=(ImageButton) findViewById(R.id.back_button);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it=new Intent(OurTeam.this,MainActivity.class);
                 startActivity(it);
-                overridePendingTransition(R.transition.enter,R.transition.exit);
+                overridePendingTransition(R.transition.left_to_right,R.transition.right_to_left);
             }
         });
 
@@ -65,10 +71,7 @@ public class OurTeam extends AppCompatActivity {
         setupViewPager(mViewPager);
 
         //      toolbarImage = (ImageView) findViewById(R.id.toolbar_image2);
-        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         TabLayout tb = (TabLayout) findViewById(R.id.tabLayout);
         tb.setupWithViewPager(mViewPager);

@@ -31,36 +31,17 @@ public class OurTeam_FragementWaves extends android.support.v4.app.Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-
-
-
         inf=inflater.inflate(R.layout.our_team_fragement_waves, container,false);
-
-
         recyclerView = (RecyclerView) inf.findViewById(R.id.our_team_fragement_waves_recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
-
         appItems =new ArrayList<>();
-
-        AppItem appItem1 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem2 =new AppItem("Aryan","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem3 =new AppItem("Keshv","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem4 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem5 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem6 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-
+        AppItem appItem1 =new AppItem("Aryan Agarwal","Head Developer","9521382950","aryanagarwal15@gmail.com","http://www.facebook.com","https://www.w3schools.com/css/trolltunga.jpg","Ashish Phogat","Developer","9521382950","aryanagarwal15@gmail.com","http://www.facebook.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem2 =new AppItem("Keshav Mittal","Developer", "9521382950","shanumittal147@gmail.com","http://www.facebook.com","https://www.w3schools.com/css/trolltunga.jpg","Rishab Kincha","Developer", "9521382950","shanumittal147@gmail.com","http://www.facebook.com","https://www.w3schools.com/css/trolltunga.jpg");
         appItems.add(appItem1);
         appItems.add(appItem2);
-        appItems.add(appItem3);
-        appItems.add(appItem4);
-        appItems.add(appItem5);
-        appItems.add(appItem6);
-
         adapter = new AppAdapter(appItems,getActivity().getApplicationContext());
         recyclerView.setAdapter(adapter);
-
-
         return inf;
     }
 }

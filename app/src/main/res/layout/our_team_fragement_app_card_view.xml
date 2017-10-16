@@ -9,8 +9,8 @@
     <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginRight=".5dp">
+        android:layout_marginRight=".5dp"
+        android:layout_weight="1">
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -24,8 +24,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="170dp">
-                    ">
+                    android:layout_height="175dp">
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -37,42 +36,55 @@
                         android:layout_marginTop="2dp"
                         app:srcCompat="@drawable/ic_account_box_black_24dp" />
 
-
-
                     <TextView
                         android:id="@+id/name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_above="@+id/number"
+                        android:layout_below="@+id/imageView3"
                         android:layout_centerHorizontal="true"
                         android:text="TextView"
-
-                        android:textStyle="bold"
-                        />
-
-                    <TextView
-                        android:id="@+id/number"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/email"
-                        android:layout_centerHorizontal="true"
-
-                        android:text="number"
-
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/name"
                         android:layout_centerHorizontal="true"
+                        android:text="Position"
+                        android:textStyle="italic" />
 
-                        android:text="email"
+                    <ImageButton
+                        android:id="@+id/info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email"
+                        android:background="#00000000"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_info_outline_black_24dp" />
 
-                        android:textStyle="bold" />
+                    <ImageButton
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email"
+                        android:layout_toRightOf="@id/info"
+                        android:background="#00000000"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_phone_black_24dp" />
 
-
+                    <ImageButton
+                        android:id="@+id/mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/email"
+                        android:background="#00000000"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_email_black_24dp" />
 
                 </RelativeLayout>
 
@@ -90,8 +102,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
-            >
+            android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -100,7 +111,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="170dp">
+                    android:layout_height="175dp">
                     ">
 
                     <ImageView
@@ -114,40 +125,59 @@
                         app:srcCompat="@drawable/ic_account_box_black_24dp" />
 
 
-
                     <TextView
                         android:id="@+id/name2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_above="@+id/number2"
+
                         android:layout_centerHorizontal="true"
                         android:text="TextView"
-
-                        android:textStyle="bold|italic"
-                        />
-
-                    <TextView
-                        android:id="@+id/number2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_above="@+id/email2"
-                        android:layout_centerHorizontal="true"
-
-                        android:text="number"
-
+android:layout_below="@id/imageView32"
                         android:textStyle="bold|italic" />
+
+
 
                     <TextView
                         android:id="@+id/email2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
 
+                        android:layout_centerHorizontal="true"
+android:layout_below="@id/name2"
                         android:text="email"
 
                         android:textStyle="bold|italic" />
+                    <ImageButton
+                        android:id="@+id/info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email2"
+                        android:background="#00000000"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_info_outline_black_24dp" />
 
+                    <ImageButton
+                        android:id="@+id/call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email2"
+                        android:layout_toRightOf="@id/info2"
+                        android:background="#00000000"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_phone_black_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/mail2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/email2"
+                        android:background="#00000000"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_email_black_24dp" />
 
                 </RelativeLayout>
 

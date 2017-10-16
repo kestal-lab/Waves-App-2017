@@ -8,6 +8,6 @@
     <color name="grey">#999999</color>
     <color name="lightgrey">#caccce</color>
     <color name="black">#444444</color>
-    <color name="red_event">#DDFF0000</color>
-    <color name="blue_event">#DD0097AC</color>
+    <color name="red_event">#88FF0000</color>
+    <color name="blue_event">#880097AC</color>
 </resources>
