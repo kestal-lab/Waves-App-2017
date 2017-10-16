@@ -60,174 +60,62 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="56dp"
-            android:layout_marginTop="57dp">
+            android:layout_marginTop="55dp"
+            android:background="@drawable/twoshades">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
 
-                    <ImageView
-                        android:id="@+id/myImageView"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_fire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="8dp"
+                    android:text="Demons cannot prosper without the goodness of angels and there is no Yin without Yang. After surfing the tides of time last year, Waves 2017 brings you a chance to explore the dark side. This Waves, be the one to write your tale afresh, a tale never to be forgotten."
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
 
-                    <TextView
-                        android:id="@+id/myImageViewText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView"
-                        android:layout_alignLeft="@id/myImageView"
-                        android:layout_alignRight="@id/myImageView"
-                        android:layout_alignTop="@id/myImageView"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
 
-                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="120dp"
+                    android:orientation="horizontal">
 
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout5"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:id="@+id/myImageView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
 
                     <TextView
-                        android:id="@+id/myImageViewText5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView5"
-                        android:layout_alignLeft="@id/myImageView5"
-                        android:layout_alignRight="@id/myImageView5"
-                        android:layout_alignTop="@id/myImageView5"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
+                        android:layout_weight="1"
+                        android:text="Ongoing Events"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="26dp" />
 
-                </RelativeLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="#ffffff" />
 
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:id="@+id/myImageView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
 
                     <TextView
-                        android:id="@+id/myImageViewText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView4"
-                        android:layout_alignLeft="@id/myImageView4"
-                        android:layout_alignRight="@id/myImageView4"
-                        android:layout_alignTop="@id/myImageView4"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
+                        android:layout_weight="1"
+                        android:text="Upcoming Events"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="26dp" />
+                </LinearLayout>
 
-                </RelativeLayout>
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout3"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:id="@+id/myImageView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
-
-                    <TextView
-                        android:id="@+id/myImageViewText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView3"
-                        android:layout_alignLeft="@id/myImageView3"
-                        android:layout_alignRight="@id/myImageView3"
-                        android:layout_alignTop="@id/myImageView3"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
-
-                </RelativeLayout>
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout2"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:id="@+id/myImageView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
-
-                    <TextView
-                        android:id="@+id/myImageViewText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView2"
-                        android:layout_alignLeft="@id/myImageView2"
-                        android:layout_alignRight="@id/myImageView2"
-                        android:layout_alignTop="@id/myImageView2"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
-
-                </RelativeLayout>
-
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/relativelayout1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-
-                    <ImageView
-                        android:id="@+id/myImageView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
-
-                    <TextView
-                        android:id="@+id/myImageViewText1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@id/myImageView1"
-                        android:layout_alignLeft="@id/myImageView1"
-                        android:layout_alignRight="@id/myImageView1"
-                        android:layout_alignTop="@id/myImageView1"
-                        android:layout_margin="1dp"
-                        android:gravity="center"
-                        android:text="On Going Events"
-                        android:textColor="#fff"
-                        android:textSize="20dp" />
-
-                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
