@@ -39,7 +39,8 @@ public class NewWinnerAdapter extends RecyclerView.Adapter<NewWinnerAdapter.View
         final WinnerItem listItem = listItems.get(position);
         holder.winner_name.setText(listItem.getWin_name());
         holder.event_name.setText(listItem.getEvent_Name());
-
+        holder.win2.setText(listItem.getWin_name2());
+        holder.win3.setText(listItem.getWin_name3());
     }
 
     @Override
@@ -48,7 +49,7 @@ public class NewWinnerAdapter extends RecyclerView.Adapter<NewWinnerAdapter.View
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView winner_name;
+        public TextView winner_name,win2,win3;
         public TextView event_name;
         public LinearLayout linearLayout;
 
@@ -56,6 +57,8 @@ public class NewWinnerAdapter extends RecyclerView.Adapter<NewWinnerAdapter.View
             super(itemView);
             event_name = (TextView)itemView.findViewById(R.id.event_name);
             winner_name = (TextView)itemView.findViewById(R.id.winner_name);
+            win2=(TextView) itemView.findViewById(R.id.winner_name1);
+            win3 = (TextView) itemView.findViewById(R.id.winner_name2);
             linearLayout = (LinearLayout) itemView.findViewById(R.id.linear_lay);
         }
     }

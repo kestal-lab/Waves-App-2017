@@ -50,7 +50,7 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, int position) {
         final AppItem listItem = listItems.get(position);
         holder.name.setText(listItem.getName());
-        holder.position.setText(listItem.getEmail());
+        holder.position.setText(listItem.getPosition());
 
 
         holder.link.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +118,7 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.ViewHolder> {
 
         Picasso.with(context).load(listItem.getImageUrl()).transform(new CircleTransform()).into(holder.imgViewIcon);
         holder.name2.setText(listItem.getName2());
-        holder.position2.setText(listItem.getEmail2());
+        holder.position2.setText(listItem.getPosition2());
         Picasso.with(context).load(listItem.getImageUrl2()).transform(new CircleTransform()).into(holder.imgViewIcon2);
 
     }

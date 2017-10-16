@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Waves 2017</string>
     <string name="item_1">Events</string>
-    <string name="item_2">RTD</string>
+    <string name="item_2">Spot On</string>
     <string name="item_3">Home</string>
     <string name="item_4">Nights</string>
-    <string name="item_5">TRP</string>
+    <string name="item_5">Winners</string>
     <string name="title_activity_nights">Nights</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>

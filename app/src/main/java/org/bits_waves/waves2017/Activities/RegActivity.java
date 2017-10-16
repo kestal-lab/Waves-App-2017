@@ -47,43 +47,6 @@ public class RegActivity extends AppCompatActivity {
 
             }
         });
-        recyclerView = (RecyclerView) findViewById(R.id.recycle5);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        listItems = new ArrayList<>();
-        fData = Utils.getDatabase();
-        mDatabase = fData.getReference().child("Winner");
-        adapter = new NewWinnerAdapter(listItems,this);
-        mDatabase.keepSynced(true);
-        recyclerView.setAdapter(adapter);
-        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    WinnerPuller dataPuller = snapshot.getValue(WinnerPuller.class);
-                    WinnerItem listItem =new WinnerItem(
-                            dataPuller.getWinner_Name(), dataPuller.getEvent_Name()
-                    );
-                    listItems.add(listItem);
-                    Log.d( "Winner_Name", dataPuller.getWinner_Name());
-                    Log.d( "Event_Name", dataPuller.getEvent_Name());
-                    adapter.notifyDataSetChanged();
-                }
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-
-        });
-        if(CheckNetwork.isInternetAvailable(getApplicationContext())) //returns true if internet available
-        {
-
-            //do something. loadwebview.
-        }
-        else
-        {
-            Toast.makeText(getApplicationContext(),"No Internet Connection",Toast.LENGTH_LONG).show();
-        }
     }
 
     @Override

@@ -66,7 +66,7 @@ public class ItemFiveFragment extends Fragment {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     WinnerPuller dataPuller = snapshot.getValue(WinnerPuller.class);
                     WinnerItem listItem =new WinnerItem(
-                            dataPuller.getWinner_Name(), dataPuller.getEvent_Name()
+                            dataPuller.getEvent_Name(), dataPuller.getWinner_Name(), dataPuller.getWinner_2(), dataPuller.getWinner_3()
                     );
                     listItems.add(listItem);
                     Log.d( "Winner_Name", dataPuller.getWinner_Name());
