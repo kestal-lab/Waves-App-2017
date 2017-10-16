@@ -76,7 +76,7 @@
                         android:id="@+id/myImageView"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:src="@drawable/ic_speaker" />
+                        android:src="@drawable/ic_fire" />
 
                     <TextView
                         android:id="@+id/myImageViewText"
