@@ -7,10 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.bits_waves.waves2017.Adapters.ViewPagerAdapterThree;
 import org.bits_waves.waves2017.R;
-
-import me.relex.circleindicator.CircleIndicator;
 
 public class Day3Nights extends Fragment {
     ViewPager viewPager;
@@ -33,11 +30,6 @@ public class Day3Nights extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_day3_nights, container, false);
-        viewPager = view.findViewById(R.id.viewPager);
-        CircleIndicator indicator = view.findViewById(R.id.indicator);
-        ViewPagerAdapterThree viewPagerAdapterThree = new ViewPagerAdapterThree(getContext());
-        indicator.setViewPager(viewPager);
-        viewPager.setAdapter(viewPagerAdapterThree);
 
 
         return view;
