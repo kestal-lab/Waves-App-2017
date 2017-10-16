@@ -38,17 +38,17 @@ public class OurTeam_FragementApp extends android.support.v4.app.Fragment{
 
 
         recyclerView = (RecyclerView) inf.findViewById(R.id.our_team_fragement_app_recycler_view);
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getApplicationContext()));
 
         appItems =new ArrayList<>();
 
-        AppItem appItem1 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem2 =new AppItem("Aryan","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem3 =new AppItem("Keshv","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem4 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem5 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem6 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem1 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem2 =new AppItem("Aryan","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem3 =new AppItem("Keshv","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem4 =new AppItem("Kav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem5 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem6 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
 
         appItems.add(appItem1);
         appItems.add(appItem2);
@@ -64,3 +64,4 @@ public class OurTeam_FragementApp extends android.support.v4.app.Fragment{
         return inf;
     }
 }
+

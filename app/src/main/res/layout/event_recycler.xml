@@ -89,11 +89,13 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@id/location_rel"
                     android:layout_centerHorizontal="true">
-<ImageButton
-    android:id="@+id/icon_category"
-    android:layout_width="16dp"
-    android:layout_height="16dp"
-    android:src="@drawable/ic_fire" />
+
+                    <ImageButton
+                        android:id="@+id/icon_category"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_access_time_black_24dp" />
+
                     <TextView
                         android:id="@+id/category"
                         android:layout_width="wrap_content"

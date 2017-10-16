@@ -43,12 +43,12 @@ public class OurTeam_FragementWaves extends android.support.v4.app.Fragment{
 
         appItems =new ArrayList<>();
 
-        AppItem appItem1 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem2 =new AppItem("Aryan","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem3 =new AppItem("head","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem4 =new AppItem("marketing manager","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem5 =new AppItem("koi nhi","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
-        AppItem appItem6 =new AppItem("a girl has no name","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem1 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem2 =new AppItem("Aryan","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem3 =new AppItem("Keshv","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem4 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem5 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
+        AppItem appItem6 =new AppItem("Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg","Keshav","7218406202", "shanumittal147@gmail.com","https://www.w3schools.com/css/trolltunga.jpg");
 
         appItems.add(appItem1);
         appItems.add(appItem2);
@@ -64,3 +64,4 @@ public class OurTeam_FragementWaves extends android.support.v4.app.Fragment{
         return inf;
     }
 }
+
