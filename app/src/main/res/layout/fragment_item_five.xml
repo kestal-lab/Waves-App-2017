@@ -1,53 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical">
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-   >
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:paddingTop="60dp"
+    tools:layout_constraintBottom_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintTop_creator="1">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="0dp"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Event Winners"
-        android:textColor="#ffffff"
-        android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/toolbar3"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="15dp"
+            android:paddingTop="7dp"
+            android:text="Welcome to The Ripple Project"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If the problems of humanity are the demons we need to encounter, then, the spear of education must be the weapon of our choice."
+            android:textSize="16dp"
+            android:paddingBottom="10dp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
 
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card1"
+            android:layout_above="@+id/card2"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cause"
+                    android:text="Cause"
+                    android:textSize="22dp"
+                    android:textColor="#000000"
+                    android:paddingTop="7dp"
+                    android:textAlignment="center" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="84dp" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginTop="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
-        android:paddingBottom="56dp"/>
-</android.support.constraint.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="88dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:layout_height="300dp">
+                </android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_speaker"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:text="The initiative includes a volunteership program and a book collection drive.These books can be used for education less fortunate students who are in an honest need of material to read and learn from.The use of school books gets reduced to a minimum after a student moves on to college. We have volunteers dedicated to the cause of children's education. The collection drive is boosted manifold by the involvement of Goonj, and Teach For India."
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="16dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card2"
+            android:layout_below="@+id/card1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/whatwedo"
+                    android:text="What we do"
+                    android:textSize="22dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:paddingTop="7dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_marginEnd="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="70dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="28dp"
+                    android:layout_height="350dp">
+                </android.support.v4.view.ViewPager>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text1"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:text="The Ripple Project,launched as the social wing of Waves is dedicated to the cause of children's education,starting it's maiden year. In collaboration with Teach for India and Goonj,we've launched a volunteership program wherein anyone interested in contributing towards children's education can do so through Teach for India classrooms and a variety of related projects.In addition to this,together with Teach for India and Goonj, we plan to give as much as we can to less fortunate students through nation-wide collection drives in the months leading to Waves. Join us and be the change!"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_speaker"
+                    android:layout_below="@+id/imageView6"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="11dp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card3"
+            android:layout_below="@+id/card2"
+            android:layout_marginBottom="62dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Join Us"
+                    android:textSize="22dp"
+                    android:id="@+id/joinus"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:paddingTop="7dp"
+                    />
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="84dp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="88dp"
+                    app:srcCompat="@drawable/ic_fire"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager3"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="28dp"
+                    android:layout_height="250dp">
+                </android.support.v4.view.ViewPager>
+
+                <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text="Contact us for more information"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Aravind Venugopal : abcdefgh"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:layout_below="@+id/text3"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/t1"
+                    android:layout_alignTop="@+id/viewPager3"
+                    android:layout_alignParentStart="true" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/goonj"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="11dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
