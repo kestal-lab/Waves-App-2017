@@ -48,7 +48,7 @@
             android:background="@color/colorPrimary"
             android:minHeight="55dp"
             android:minWidth="55dp"
-            app:srcCompat="@drawable/ic_pen" />
+            app:srcCompat="@drawable/ic_hand" />
 
         <View
             android:layout_width="match_parent"

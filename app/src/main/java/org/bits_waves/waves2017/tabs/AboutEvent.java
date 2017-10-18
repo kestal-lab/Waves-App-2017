@@ -34,8 +34,14 @@ public class AboutEvent extends Fragment {
             event_name_string = (String) savedInstanceState.getSerializable("event_name");
         }
         about_event = (TextView) view.findViewById(R.id.about_event);
-        if (event_name_string.equals("Heading 0 2")){
-            about_event.setText("This is a another test");
+        if (event_name_string.equals("Spin Off")){
+            about_event.setText("Do you have it in you to win the ultimate band title?\n" +
+                    "This is the intercollegiate band event. The bands may use a range of " +
+                    "Indian/Western instruments and play songs in any Indian language to\n" +
+                    "compete for the title.\n" +
+                    "Team composition: 3-10 members\n" +
+                    "Teams per college: 2\n" +
+                    "Registration: On the spot");
         }
         return view;
     }

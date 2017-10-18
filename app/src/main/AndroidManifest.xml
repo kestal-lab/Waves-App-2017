@@ -14,16 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Activities.OurTeam" />
         <activity android:name=".Activities.RegActivity" />
         <activity android:name=".Activities.Events" />
-        
         <activity android:name=".tabs.Day0" />
         <activity android:name=".tabs.Day1" />
         <activity android:name=".tabs.Day2" />
@@ -32,18 +27,25 @@
         <activity android:name=".tabs.Day2Nights" />
         <activity android:name=".tabs.Day3Nights" />
         <activity android:name=".tabs.AboutEvent" />
-        <activity android:name=".tabs.RuleBook"></activity>
+        <activity android:name=".tabs.RuleBook" />
 
-        <service
-            android:name=".FirebaseMessagingService">
+        <service android:name=".FirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
