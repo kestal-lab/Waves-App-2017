@@ -1,5 +1,6 @@
 package org.bits_waves.waves2017.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import org.bits_waves.waves2017.Activities.MainActivity;
 import org.bits_waves.waves2017.ListItems.EventItem;
 import org.bits_waves.waves2017.Activities.Events;
 import org.bits_waves.waves2017.R;
@@ -27,6 +29,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     private List<EventItem> listItems;
     private Context context;
     private LinearLayout rootView;
+
 
 
     public EventAdapter(List<EventItem> moviesList, Context context) {
@@ -44,6 +47,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         final EventItem listItem = listItems.get(position);
+
         holder.head.setText(listItem.getHead());
         holder.desc.setText(listItem.getDesc());
         holder.event_venue.setText(listItem.getEvent_location());
@@ -57,6 +61,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
                 intent.putExtra("event_name",listItem.getHead());
                 intent.putExtra("event_image",listItem.getImageUrl());
                 context.startActivity(intent);
+
             }
         });
         if(position % 2 == 0)

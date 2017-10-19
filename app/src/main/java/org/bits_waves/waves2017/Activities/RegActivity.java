@@ -37,16 +37,16 @@ public class RegActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
-        backBut1 = (ImageButton) findViewById(R.id.backit1);
-        backBut1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RegActivity.this,MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.transition.enter, R.transition.exit);
-
-            }
-        });
+//        backBut1 = (ImageButton) findViewById(R.id.backit1);
+//        backBut1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(RegActivity.this,MainActivity.class);
+//                startActivity(intent);
+//                overridePendingTransition(R.transition.enter, R.transition.exit);
+//
+//            }
+//        });
     }
 
     @Override
