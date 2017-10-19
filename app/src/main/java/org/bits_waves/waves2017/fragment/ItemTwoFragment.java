@@ -69,7 +69,7 @@ public class ItemTwoFragment extends Fragment {
 
         Toolbar toolbar = myFragmentView.findViewById(R.id.toolbar);
         TextView title = myFragmentView.findViewById(R.id.title_text);
-        title.setText("Realtime Database");
+        title.setText("Spot - On");
         title.setTextColor(getResources().getColor(R.color.white));
 
         listItems = new ArrayList<>();

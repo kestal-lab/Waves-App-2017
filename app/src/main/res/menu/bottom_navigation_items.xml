@@ -10,7 +10,7 @@
         android:title="@string/item_2"/>
     <item
         android:id="@+id/action_item3"
-        android:icon="@drawable/ic_assignment_ind_black_24dp"
+        android:icon="@drawable/ic_stat_name"
         android:title="@string/item_3"/>
     <item
         android:id="@+id/action_item4"
