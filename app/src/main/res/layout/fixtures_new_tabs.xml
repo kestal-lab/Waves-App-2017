@@ -19,7 +19,8 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_back">
 
                 <TextView
                     android:id="@+id/title_text"

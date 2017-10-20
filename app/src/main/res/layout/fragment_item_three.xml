@@ -18,16 +18,16 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/gradient_back"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"></android.support.v7.widget.Toolbar>
+            android:theme="?attr/actionBarTheme"/>
 
         <ImageButton
             android:id="@+id/ourTeam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/gradient_back"
             android:minHeight="55dp"
             android:minWidth="55dp"
             app:srcCompat="@drawable/ic_team" />
@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/gradient_back"
             android:minHeight="55dp"
             android:minWidth="55dp"
             app:srcCompat="@drawable/ic_hand" />

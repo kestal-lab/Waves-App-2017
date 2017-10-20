@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#FFF3E0"
     tools:context="org.bits_waves.waves2017.tabs.Day3Nights">
 
     <ScrollView
@@ -26,7 +26,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="#FFF3E0">
 
                     <ImageView
                         android:id="@+id/image"
@@ -111,7 +112,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="#FFF3E0">
 
                     <ImageView
                         android:id="@+id/image2"
