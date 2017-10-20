@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/gradient_back"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"/>
+            android:theme="?attr/actionBarTheme" />
 
         <ImageButton
             android:id="@+id/ourTeam"
@@ -48,7 +48,8 @@
             android:background="@drawable/gradient_back"
             android:minHeight="55dp"
             android:minWidth="55dp"
-            app:srcCompat="@drawable/ic_hand" />
+            app:srcCompat="@drawable/ic_hand"
+            />
 
         <View
             android:layout_width="match_parent"
@@ -81,76 +82,79 @@
                     android:textColor="#ffffff"
                     android:textSize="18dp" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/text"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Category"
-                            android:textAlignment="center"
-                            android:textColor="#ffffff"
-                            android:textSize="26dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Ongoing Events"
-                            android:textAlignment="center"
-                            android:textColor="#ffffff"
-                            android:textSize="26dp" />
-                    </LinearLayout>
+                    android:paddingTop="20dp">
 
                     <View
-                        android:layout_width="2dp"
-                        android:layout_height="140dp"
-                        android:layout_marginTop="55dp"
-                        android:background="#ffffff" />
+                        android:id="@+id/vertical"
+                        android:layout_width="1dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#fff"
 
-                    <LinearLayout
+                        />
+
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/text"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_alignRight="@id/vertical"
+                        >
 
-
-                        <TextView
-                            android:layout_width="match_parent"
+                        <Button
+                            android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:text="Manifests"
-                            android:textAlignment="center"
-                            android:textColor="#ffffff"
-                            android:textSize="26dp" />
+                           android:layout_centerHorizontal="true"
+                            android:id="@+id/live"
+                            android:background="#ff0000"
+                            android:text="      Now Live       "
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
+                        <Button
+                            android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Upcoming Events"
-                            android:textAlignment="center"
-                            android:textColor="#ffffff"
-                            android:textSize="26dp" />
-                    </LinearLayout>
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/category"
+                            android:layout_below="@id/live"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:text="    Categories   "
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/vertical"
+                        >
 
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/minifests"
+                            android:background="#ffffff"
+                            android:text="     Minifests      "
+                            android:textColor="#000"
+                            android:textStyle="bold" />
 
-                </LinearLayout>
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/but1"
+                            android:layout_below="@id/minifests"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"
+                            android:text="Winners"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
 
 
             </LinearLayout>
