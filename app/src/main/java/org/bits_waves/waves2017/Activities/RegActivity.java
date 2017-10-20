@@ -3,27 +3,16 @@ package org.bits_waves.waves2017.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import org.bits_waves.waves2017.Adapters.NewWinnerAdapter;
-import org.bits_waves.waves2017.CheckNetwork;
 import org.bits_waves.waves2017.ListItems.WinnerItem;
 import org.bits_waves.waves2017.R;
-import org.bits_waves.waves2017.Utils;
-import org.bits_waves.waves2017.WinnerPuller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class RegActivity extends AppCompatActivity {
@@ -37,16 +26,16 @@ public class RegActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
-//        backBut1 = (ImageButton) findViewById(R.id.backit1);
-//        backBut1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(RegActivity.this,MainActivity.class);
-//                startActivity(intent);
-//                overridePendingTransition(R.transition.enter, R.transition.exit);
-//
-//            }
-//        });
+        backBut1 = (ImageButton) findViewById(R.id.backit1);
+        backBut1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegActivity.this, MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.transition.enter, R.transition.exit);
+
+            }
+        });
     }
 
     @Override
