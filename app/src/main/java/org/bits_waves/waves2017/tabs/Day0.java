@@ -56,7 +56,7 @@ public class Day0 extends Fragment {
         listItems.add(listItem1);
         EventItem listItem2 = new EventItem("Searock","Goa Eliminations","http://bits-waves.org/static/main/images1/events/searock.JPG","23:00","Auditorium","Music");
         listItems.add(listItem2);
-        EventItem listItem3 = new EventItem("Sizzel","Eliminations","http://bits-waves.org/static/main/images1/events/sizzle.jpg","23:00","C-301","Dance");
+        EventItem listItem3 = new EventItem("Sizzle","Eliminations","http://bits-waves.org/static/main/images1/events/sizzle.jpg","23:00","C-301","Dance");
         listItems.add(listItem3);
         EventItem listItem4 = new EventItem("Jukebox","Eliminations","http://bits-waves.org/static/main/images1/events/jokebox.JPG","23:00","LT 1/2 lawns","Music");
         listItems.add(listItem4);

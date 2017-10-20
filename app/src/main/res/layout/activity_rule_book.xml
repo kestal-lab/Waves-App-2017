@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgrey"
+    android:background="#FFF3E0"
+    android:paddingBottom="56dp"
     tools:context="org.bits_waves.waves2017.tabs.RuleBook">
 
     <ScrollView
@@ -19,7 +20,8 @@
             android:paddingTop="8dp"
             android:text="rulebook is here"
             android:textColor="#000000"
-            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
             tools:layout_editor_absoluteX="123dp"
             tools:layout_editor_absoluteY="275dp" />
 

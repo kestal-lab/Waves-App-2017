@@ -84,7 +84,7 @@ public class OurTeam extends AppCompatActivity {
         SectionsPagerAdapter adapter=new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new OurTeam_FragementApp(),"App");
         adapter.addFragment(new OurTeam_FragementWaves(),"Waves");
-        adapter.addFragment(new OurTeam_FragementSponsers(),"Sponsors");
+//        adapter.addFragment(new OurTeam_FragementSponsers(),"Sponsors");
         viewpager.setAdapter(adapter);
 
     }

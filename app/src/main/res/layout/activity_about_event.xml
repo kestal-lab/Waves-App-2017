@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightgrey"
+    android:background="#FFF3E0"
     tools:context="org.bits_waves.waves2017.tabs.AboutEvent">
 
     <ScrollView
@@ -19,7 +19,8 @@
             android:paddingTop="8dp"
             android:text="About event goes here"
             android:textColor="#000000"
-            android:textSize="14dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="123dp"
             tools:layout_editor_absoluteY="275dp" />
 

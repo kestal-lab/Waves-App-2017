@@ -51,13 +51,55 @@ public class Day1 extends Fragment {
 
         recyclerView.setAdapter(adapter);
 
-        for (int i = 0; i <= 10; i++) {
-            EventItem listItem = new EventItem("Heading 1 " + (i+1),
-                    "Hello","https://www.w3schools.com/css/trolltunga.jpg","10:00","B-Dome","Music"
-            );
 
-            listItems.add(listItem);
-        }
+
+
+
+        EventItem listItem = new EventItem("Rangmanch","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","09:00","Auditorium","Drama");
+        listItems.add(listItem);
+        EventItem listItem1 = new EventItem("Dancing Duo","Eliminations","http://bits-waves.org/static/main/images1/events/dancingduo.jpg","09:00","Outdoor Stage","Dance");
+        listItems.add(listItem1);
+        EventItem listItem2 = new EventItem("Moot Court","","http://bits-waves.org/static/main/images1/events/moot.JPG","09:00","A & C Block","Specials");
+        listItems.add(listItem2);
+        EventItem listItem3 = new EventItem("Contention","","http://bits-waves.org/static/main/images1/events/Contention.JPG","09:00","A & C Block","Literary");
+        listItems.add(listItem3);
+        EventItem listItem4 = new EventItem("Carpedictum","","http://bits-waves.org/static/main/images1/events/culturalgauntlet.JPG","09:00","C-303","Literary");
+        listItems.add(listItem4);
+        EventItem listItem5 = new EventItem("Vice Quiz","","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","LT-1","Quiz");
+        listItems.add(listItem5);
+        EventItem listItem6 = new EventItem("Nukkad Natak","Eliminations","http://bits-waves.org/static/main/images1/events/nukkadnatak.jpg","10:00","LT1,2Lawns","Drama");
+        listItems.add(listItem6);
+        EventItem listItem7 = new EventItem("Artathon","Round 1","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","LT-4","Design");
+        listItems.add(listItem7);
+        EventItem listItem8 = new EventItem("Blind Art","","http://bits-waves.org/static/main/images1/events/blindart.JPG","10:00","KalaRoom","Design");
+        listItems.add(listItem8);
+        EventItem listItem9 = new EventItem("Fashion Design","","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","C-304","Design");
+        listItems.add(listItem9);
+        EventItem listItem10 = new EventItem("Show Me The Funny","Finals","http://bits-waves.org/static/main/images1/events/smtf.JPG","12:30","Outdoor Stage","Specials");
+        listItems.add(listItem10);
+        EventItem listItem11 = new EventItem("AAROH","","http://bits-waves.org/static/main/images1/events/artathon.jpg","12:00","LT-4","Design");
+        listItems.add(listItem11);
+        EventItem listItem12 = new EventItem("Kala Workshop","","http://bits-waves.org/static/main/images1/events/artathon.jpg","12:00","Kalaroom","Design");
+        listItems.add(listItem12);
+        EventItem listItem13 = new EventItem("Sizzle","Round 1","http://bits-waves.org/static/main/images1/events/sizzle.jpg","12:00","CC","Dance");
+        listItems.add(listItem13);
+        EventItem listItem14 = new EventItem("Fashion Design","Finals","http://bits-waves.org/static/main/images1/events/artathon.jpg","14:00","C-304","Design");
+        listItems.add(listItem14);
+        EventItem listItem15 = new EventItem("Searock","Semi Final","http://bits-waves.org/static/main/images1/events/searock.JPG","00:00","Auditorium","Music");
+        listItems.add(listItem15);
+        EventItem listItem16 = new EventItem("SpinOff","Finals","http://bits-waves.org/static/main/images1/events/spinoff.JPG","01:00","Outdoor Stage","Music");
+        listItems.add(listItem16);
+        EventItem listItem17 = new EventItem("Jukebox","Elimination","http://bits-waves.org/static/main/images1/events/jokebox.JPG","00:00","LT 1,2 Lawns","Music");
+        listItems.add(listItem17);
+        EventItem listItem18 = new EventItem("Sizzle","Eliminations","http://bits-waves.org/static/main/images1/events/sizzle.jpg","23:30","Kala Room","Dance");
+        listItems.add(listItem18);
+        EventItem listItem19 = new EventItem("Natyanjali","Eliminations","http://bits-waves.org/static/main/images1/events/natyanjali.JPG","00:00","CC","Dance");
+        listItems.add(listItem19);
+        EventItem listItem20 = new EventItem("Mr and Ms Waves","Group Disccusion","http://bits-waves.org/static/main/images1/events/mr_waves.jpg","00:00","C-301,C-302","Specials");
+        listItems.add(listItem20);
+        EventItem listItem21 = new EventItem("Nukkad Natak","Finals","http://bits-waves.org/static/main/images1/events/nukkadnatak.jpg","00:00","Crossroads","Drama");
+        listItems.add(listItem21);
+
         return myFragmentView;
 
     }
