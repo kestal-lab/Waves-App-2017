@@ -34,7 +34,7 @@
                     <ImageView
                         android:id="@+id/image"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:layout_marginTop="32dp"
                         app:srcCompat="@drawable/ic_speaker" />
 
@@ -43,7 +43,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image"
-                        android:text="To be announced"
+                        android:text="Comedy Night"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="20dp" />
@@ -53,7 +53,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title"
-                        android:text="To be announced To be announced To be announced To be announced To be announced To be announced To be announced"
+                        android:text="Watch Vipul Goyal and Abhishek Upmanyu Live."
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="16dp" />
@@ -95,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="8:00 PM"
+                            android:text="4:00 PM"
                             android:textColor="#000000"
                             android:textSize="15dp" />
                     </LinearLayout>
@@ -120,7 +120,7 @@
                     <ImageView
                         android:id="@+id/image2"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:layout_marginTop="32dp"
                         app:srcCompat="@drawable/ic_hand" />
 
@@ -129,7 +129,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image2"
-                        android:text="To be announced"
+                        android:text="English Night"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="20dp" />
@@ -139,7 +139,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title2"
-                        android:text="To be announced To be announced To be announced To be announced To be announced To be announced To be announced"
+                        android:text="To Be Anounced"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="16dp" />
@@ -162,7 +162,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Auditorium"
+                            android:text="B-Dome"
                             android:textColor="#000000"
                             android:textSize="15dp" />
 
@@ -181,7 +181,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="8:00 PM"
+                            android:text="7:00 PM"
                             android:textColor="#000000"
                             android:textSize="15dp" />
                     </LinearLayout>

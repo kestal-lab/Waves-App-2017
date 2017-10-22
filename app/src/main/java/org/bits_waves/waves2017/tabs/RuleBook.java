@@ -763,6 +763,61 @@ public class RuleBook extends Fragment {
                     "Final round \n" +
                     "Different rounds will be held with pair vs pair focusing on how well the team works in front of a crowd. Eliminations take place until 3 teams are left who compete for the title. Each team is scored according to their performance.");
         }
+        if (event_name_string.equals("Searock")){
+            about_event.setText(
+                    "1) Bands selected for the City Eliminations agree to publicise the event through their online reach using the template sent to them by Searock.\n" +
+                    "2) The decision made by Searock will be final and binding.\n" +
+                    "3) Searock will not be responsible for any loss of property in any of the eliminations or the finals. The owner must take care of his/her belongings.\n" +
+                    "4) Searock requires the participants to comply with the registration fee requirements (if any, depends from city to city).\n" +
+                    "5) Searock will not provide any sort of travel or accommodation reimbursements or sponsorship. Bands are expected to manage their own expenses.\n" +
+                    "6) Searock prize money is displayed as a total of winners' prize money and not only for the participant that comes first. The prize will be split amongst the winners in a ratio deemed fit by the organizers. In case of Sponsorship back out Searock organizing committee holds the right to decrease prize money by a certain percentage as deemed required.\n" +
+                    "7) Searock will set strict rules regarding the time limits of performing for each band. Failure to comply with the timing rules being provided will result in the sound being cut from the console.\n" +
+                    "8) The winning bands will get to play at the stage where the English act and the coheadlining act will perform, prior to their performance, in the finals. All rules briefed before getting on to the Main Stage in Goa should be followed strictly.\n" +
+                    "9) The Searock organizers reserve the right to cancel the registration of any band if it is deemed fit. This may include misbehaviour with the organizing committee, judges or defamation of the sponsors, partners and associates during any Searock event. Searock may blacklist such bands from participating in Searock in any future editions as well.\n" +
+                    "10) No one except the band members will be allowed free entry to the fest in Goa. Band managers wonâ€™t be counted as a band member and will have to pay the entry fee as mentioned at the gate by Department of Registration and Hospitality, BITS Pilani, Goa Campus.\n" +
+                    "11) Any change in the rules and regulations, along with the drafting of these rules, will be done by the Searock organizers and based on their discretion. Notice to which will be provided well in advance.\n" +
+                    "12) In no circumstance can the members of Searock Organizing committee, Council for Students Affairs BITS Pilani Goa Campus, Waves Organizing committee, or any partner/sponsor be sued over any Searock specific conflict. Decision of Searock Organizing committee shall be final and binding.\n" +
+                    "13) Any band selected for city eliminations must inform Searock team if it is unable to participate in not less than two days prior to the event. If it fails to do so, the band will be disqualified from registering in any future Searock editions.\n" +
+                    "14) No band will be given any relaxation to any of the aforementioned rules. ");
+        }
+        if (event_name_string.equals("Inauguration")){
+            about_event.setText("No Rules Here Really. Just sit back and enjoy");
+        }
+        if (event_name_string.equals("Spin Off")){
+            about_event.setText("Eliminations :\n" +
+                    "\uF0B7 Each Contestant will be given 10 minutes to mix his/her tracks on\n" +
+                    "stage. Pre Mixed tracks will not be considered and may result in\n" +
+                    "disqualification of the contestant.\n" +
+                    "\uF0B7 The Participants are allowed to use their own Headphones if required\n" +
+                    "and allowed by the Honourable Judges.\n" +
+                    "\uF0B7 Contestants may not use any external aid once his/her time begins on\n" +
+                    "stage.\n" +
+                    "\uF0B7 Winners shall qualify to participate in the finals during Waves 2017 at\n" +
+                    "Goa.\n" +
+                    "\uF0B7 Failure to abide by the Judges, Organising Committee and the rules set\n" +
+                    "forth will result in immediate disqualification from the event.\n" +
+                    "68Semi-Finals and Finals :\n" +
+                    "\uF0B7 Each Contestant will be given 10 minutes to mix his/her tracks on stage.\n" +
+                    "Pre Mixed tracks will not be considered and may result in disqualification\n" +
+                    "of the contestant.\n" +
+                    "\uF0B7 The Participants are allowed to use their own Headphones if required and\n" +
+                    "allowed by the Honourable Judges.\n" +
+                    "\uF0B7 Contestants may not use any external aid once his/her time begins on\n" +
+                    "stage.\n" +
+                    "\uF0B7 Winner of Spin-off will get to perform on the EDM night of Waves\n" +
+                    "\uF0B7 Failure to abide by the Judges, Waves Control and the rules set forth will\n" +
+                    "result in immediate disqualification from the event.\n" +
+                    "Judging Criteria:\n" +
+                    "Contestants will be judged on the following factors out of a score of 10\n" +
+                    "(5+5).\n" +
+                    "A score out of 5 based on the following (5):\n" +
+                    "\uF0B7 Mixing Techniques and Track Selection\n" +
+                    "\uF0B7 Response from the audience\n" +
+                    "and another out of 5 based on (5)\n" +
+                    "\uF0B7 Micing (Mic Use)\n" +
+                    "\uF0B7 Body Language\n" +
+                    "\uF0B7 Appearance");
+        }
         return view;
     }
 }

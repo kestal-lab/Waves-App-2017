@@ -367,6 +367,15 @@ public class AboutEvent extends Fragment {
                     "Registration: Online / On the Spot \n" +
                     "  \n");
         }
+        if (event_name_string.equals("Inauguration")){
+            about_event.setText("Experiance Inauguration of Waves first hand jam packed with awesome performances.");
+        }
+        if (event_name_string.equals("Searock")){
+            about_event.setText(" Searock is an all-India semi-pro band competition hosted as part of the BITS Goa's three-day long cultural festival, \"Waves\". With performances ready to set fire and make the crowd go wild, the Goan atmosphere is just right to set the adrenaline rushing! In its thirteenth edition, Searock aims to progress further into the underground realm of music in the country with eliminations in nine cities which include Mumbai, Delhi, Bangalore, Kolkata, Ahmedabad, Goa, Chennai , Hyderabad and Kochi. The best of bands to feature in these eliminations will battle it out in the overnight semifinal event to be held in Goa during Waves 2017 for a spot in the final. The finalists will perform the next day at the English Nite of Waves 2017 and their performances will be judged by the yet to revealed headlining Act. The best act of the night will take home the coveted title of \"Winners of Searock 2017\". With the likes of Zygnema and Family Cheese being amongst the illustrious alumni, Searock has become one of the largest band competitions in India. If you have what it takes to be a true rocker, then this is your place! Let your music breathe life!!\n" +
+                    "Searock Team.\n" +
+                    "Searock 2017.\n" +
+                    "Where Music breathes Life. ");
+        }
         return view;
     }
 }

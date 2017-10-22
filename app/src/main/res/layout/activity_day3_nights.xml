@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3E0"
-    tools:context="org.bits_waves.waves2017.tabs.Day3Nights">
+    android:background="#FFE0B2"
+    tools:context="org.bits_waves.waves2017.tabs.Day1Nights">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -15,7 +15,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#FFF3E0">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/card1"
@@ -32,16 +33,16 @@
                     <ImageView
                         android:id="@+id/image"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
                         android:layout_marginTop="32dp"
-                        app:srcCompat="@drawable/ic_events" />
+                        app:srcCompat="@drawable/ic_fire" />
 
                     <TextView
                         android:id="@+id/title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image"
-                        android:text="To be announced"
+                        android:text="EDM Night"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="20dp" />
@@ -51,7 +52,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/title"
-                        android:text="To be announced To be announced To be announced To be announced To be announced To be announced To be announced"
+                        android:text="Jump on the beats of Diego Miranda"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="16dp" />
@@ -74,7 +75,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Auditorium"
+                            android:text="B-Dome"
                             android:textColor="#000000"
                             android:textSize="15dp" />
 
@@ -93,100 +94,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="8:00 PM"
+                            android:text="7:00 PM"
                             android:textColor="#000000"
                             android:textSize="15dp" />
                     </LinearLayout>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/card2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/card1"
-                android:layout_marginBottom="58dp"
-                android:layout_marginTop="2dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="0dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFF3E0">
-
-                    <ImageView
-                        android:id="@+id/image2"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="32dp"
-                        app:srcCompat="@drawable/ic_team" />
-
-                    <TextView
-                        android:id="@+id/title2"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/image2"
-                        android:text="To be announced"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:id="@+id/text2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/title2"
-                        android:text="To be announced To be announced To be announced To be announced To be announced To be announced To be announced"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="16dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/text2"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_fire" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Auditorium"
-                            android:textColor="#000000"
-                            android:textSize="15dp" />
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="20dp"
-                            android:background="#000000" />
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/ic_pen" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="8:00 PM"
-                            android:textColor="#000000"
-                            android:textSize="15dp" />
-                    </LinearLayout>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
         </RelativeLayout>
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

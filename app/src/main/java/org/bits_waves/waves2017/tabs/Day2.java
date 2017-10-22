@@ -68,9 +68,7 @@ public class Day2 extends Fragment {
                 "http://bits-waves.org/static/main/images1/events/portraiture.JPG",
                 "09:00","C-302","Design");
         listItems.add(listItem5);
-        EventItem listItem6 = new EventItem("Carpedictum","",
-                "http://bits-waves.org/static/main/images1/events/culturalgauntlet.JPG","09:00","A-507","Literary");
-        listItems.add(listItem6);
+
         EventItem listItem7 = new EventItem("Silence Of The Amps","Eliminations+Finals","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","09:30","LT 1,2 Lawns","Music");
         listItems.add(listItem7);
         EventItem listItem8 = new EventItem("Alaap","",
@@ -97,7 +95,7 @@ public class Day2 extends Fragment {
         listItems.add(listItem14);
         EventItem listItem15 = new EventItem("Quiz In Two Shades","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","14:00","LT-1","Quiz");
         listItems.add(listItem15);
-        EventItem listItem16 = new EventItem("SeaRock","Final",
+        EventItem listItem16 = new EventItem("Searock","Final",
                 "http://bits-waves.org/static/main/images1/events/searock.JPG",
                 "17:00","Auditorium","Music");
         listItems.add(listItem16);

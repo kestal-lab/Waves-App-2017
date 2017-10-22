@@ -13,11 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.OurTeam" />
         <activity android:name=".Activities.RegActivity" />
         <activity android:name=".Activities.Events" />
-        
 
         <service android:name=".FirebaseMessagingService">
             <intent-filter>
@@ -36,7 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.NowLive"></activity>
+        <activity android:name=".Activities.NowLive" />
+        <activity android:name=".Activities.WinnersActivity" />
     </application>
 
 </manifest>

@@ -46,11 +46,10 @@
                     android:layout_height="56dp"
                     android:layout_below="@+id/toolbar_image"
                     app:layout_collapseMode="pin"
-
                     app:tabGravity="center"
                     app:tabMode="fixed"
                     app:tabSelectedTextColor="@color/white"
-                    app:tabTextColor="@color/grey" />
+                    app:tabTextColor="#000" />
 
                 <ImageView
                     android:id="@+id/toolbar_image"

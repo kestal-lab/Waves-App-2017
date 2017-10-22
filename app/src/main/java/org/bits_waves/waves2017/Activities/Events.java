@@ -97,17 +97,16 @@ public class Events extends AppCompatActivity {
 
                     return new AboutEvent();
                 case 1:
-                    return new RuleBook();
-                case 2:
                 default:
-                    return new Schedule();
+                    return new RuleBook();
+
 
             }
         }
 
         @Override
         public int getCount() {
-            return 3;
+            return 2;
         }
 
         @Override
@@ -117,8 +116,6 @@ public class Events extends AppCompatActivity {
                     return "About Event";
                 case 1:
                     return "Rule Book";
-                case 2:
-                    return "Schedule";
 
             }
             return null;

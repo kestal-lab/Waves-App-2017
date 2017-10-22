@@ -50,7 +50,7 @@ public class Day0 extends Fragment {
         adapter = new EventAdapter(listItems,getActivity().getApplicationContext());
 
         recyclerView.setAdapter(adapter);
-        EventItem listItem = new EventItem("Inaugration","","http://bits-waves.org/static/main/images1/events/skime.JPG","17:00","Auditorium","Specials");
+        EventItem listItem = new EventItem("Inauguration","","http://bits-waves.org/static/main/images1/events/skime.JPG","17:00","Auditorium","Specials");
         listItems.add(listItem);
         EventItem listItem1 = new EventItem("Spin Off","Goa Eliminations","http://bits-waves.org/static/main/images1/events/spinoff.JPG","22:00","Outdoor Stage","Music");
         listItems.add(listItem1);

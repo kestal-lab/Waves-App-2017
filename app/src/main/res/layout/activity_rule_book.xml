@@ -18,7 +18,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:paddingTop="8dp"
-            android:text="rulebook is here"
+            android:text="Oops! Rule Book is not available for this event. For more information contact: +91-8976695524"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="16dp"

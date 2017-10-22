@@ -13,11 +13,12 @@ import org.bits_waves.waves2017.Activities.NowLive;
 import org.bits_waves.waves2017.Activities.OurTeam;
 import org.bits_waves.waves2017.Activities.RegActivity;
 import org.bits_waves.waves2017.R;
+import org.bits_waves.waves2017.Activities.WinnersActivity;
 
 public class ItemThreeFragment extends Fragment {
     public ImageButton ourTeam, regBut;
     private View myFragmentView;
-    private Button live;
+    private Button live,winner_but;
     public static ItemThreeFragment newInstance() {
         ItemThreeFragment fragment = new ItemThreeFragment();
         return fragment;
@@ -35,7 +36,7 @@ public class ItemThreeFragment extends Fragment {
         ourTeam = myFragmentView.findViewById(R.id.ourTeam);
         regBut = myFragmentView.findViewById(R.id.regBut);
         live = myFragmentView.findViewById(R.id.live);
-
+        winner_but=myFragmentView.findViewById(R.id.winners);
         ourTeam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +58,14 @@ public class ItemThreeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity().getApplicationContext(), NowLive.class);
+                startActivity(intent);
+                getActivity().overridePendingTransition(R.transition.up_to_down, R.transition.down_to_up);
+            }
+        });
+        winner_but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), WinnersActivity.class);
                 startActivity(intent);
                 getActivity().overridePendingTransition(R.transition.up_to_down, R.transition.down_to_up);
             }

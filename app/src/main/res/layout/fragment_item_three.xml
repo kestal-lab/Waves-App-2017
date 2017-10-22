@@ -85,73 +85,48 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="20dp">
+                    android:paddingTop="50dp">
 
                     <View
                         android:id="@+id/vertical"
                         android:layout_width="1dp"
-                        android:layout_height="100dp"
+                        android:layout_height="50dp"
                         android:layout_centerHorizontal="true"
-                        android:background="#fff"
-
-                        />
+                        android:background="#fff" />
 
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignRight="@id/vertical"
-                        >
+                        android:layout_alignRight="@id/vertical">
 
                         <Button
+                            android:id="@+id/live"
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                           android:layout_centerHorizontal="true"
-                            android:id="@+id/live"
+                            android:layout_centerHorizontal="true"
                             android:background="#ff0000"
                             android:text="      Now Live       "
                             android:textColor="#fff"
                             android:textStyle="bold" />
 
-                        <Button
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:id="@+id/category"
-                            android:layout_below="@id/live"
-                            android:layout_marginTop="10dp"
-                            android:background="#ffffff"
-                            android:text="    Categories   "
-                            android:textColor="#000"
-                            android:textStyle="bold" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_alignLeft="@id/vertical"
-                        >
+                        android:layout_alignLeft="@id/vertical">
 
                         <Button
+                            android:id="@+id/winners"
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:id="@+id/minifests"
-                            android:background="#ffffff"
-                            android:text="     Minifests      "
-                            android:textColor="#000"
-                            android:textStyle="bold" />
-
-                        <Button
-                            android:layout_width="120dp"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:id="@+id/but1"
-                            android:layout_below="@id/minifests"
-                            android:layout_marginTop="10dp"
                             android:background="#ffffff"
                             android:text="Winners"
                             android:textColor="#000"
                             android:textStyle="bold" />
+
                     </RelativeLayout>
 
                 </RelativeLayout>
