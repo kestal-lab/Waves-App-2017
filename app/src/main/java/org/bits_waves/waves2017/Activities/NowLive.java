@@ -16,8 +16,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.bits_waves.waves2017.Adapters.NowLiveAdapter;
 import org.bits_waves.waves2017.Adapters.RTDAdapter;
+import org.bits_waves.waves2017.ListItems.NowLiveItem;
 import org.bits_waves.waves2017.ListItems.RTDItem;
+import org.bits_waves.waves2017.NowLivePuller;
 import org.bits_waves.waves2017.R;
 import org.bits_waves.waves2017.RTDPuller;
 import org.bits_waves.waves2017.Utils;
@@ -29,7 +32,7 @@ public class NowLive extends AppCompatActivity {
     public ImageButton backBut1;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
-    private List<RTDItem> listItems = new ArrayList<>();
+    private List<NowLiveItem> listItems = new ArrayList<>();
     private DatabaseReference mDatabase;
     private FirebaseDatabase fData;
 
@@ -53,12 +56,11 @@ public class NowLive extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
-
         listItems = new ArrayList<>();
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        mDatabase = fData.getReference().child("rtd");
+        mDatabase = fData.getReference().child("live");
         mDatabase.keepSynced(true);
-        adapter = new RTDAdapter(listItems, getApplicationContext());
+        adapter = new NowLiveAdapter(listItems, getApplicationContext());
 
         recyclerView.setAdapter(adapter);
 
@@ -66,13 +68,13 @@ public class NowLive extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    RTDPuller dataPuller = snapshot.getValue(RTDPuller.class);
-                    RTDItem listItem = new RTDItem(
-                            dataPuller.getNewshead(), dataPuller.getNewsdesc()
+                    NowLivePuller dataPuller = snapshot.getValue(NowLivePuller.class);
+                    NowLiveItem listItem = new NowLiveItem(
+                            dataPuller.getTitle(), dataPuller.getVenue()
                     );
                     listItems.add(listItem);
-                    Log.d("Name", dataPuller.getNewshead());
-                    Log.d("Mobile", dataPuller.getNewsdesc());
+                    Log.d("Title", dataPuller.getTitle());
+                    Log.d("Venue", dataPuller.getVenue());
                     adapter.notifyDataSetChanged();
                 }
             }

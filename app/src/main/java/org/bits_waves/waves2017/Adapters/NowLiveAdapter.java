@@ -55,10 +55,8 @@ public class NowLiveAdapter extends RecyclerView.Adapter<NowLiveAdapter.ViewHold
 
         public ViewHolder(View itemView) {
             super(itemView);
-
-            Title = itemView.findViewById(R.id.Title);
-            Venue = itemView.findViewById(R.id.Venue);
-
+            Title = (TextView) itemView.findViewById(R.id.Title);
+            Venue = (TextView) itemView.findViewById(R.id.Venue);
             linearLayout = itemView.findViewById(R.id.linear_lay);
         }
     }

@@ -42,7 +42,7 @@ public class WinnersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_now_live);
+        setContentView(R.layout.activity_winners);
         backBut1 = (ImageButton) findViewById(R.id.back_button);
         backBut1.setOnClickListener(new View.OnClickListener() {
             @Override
