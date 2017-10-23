@@ -9,16 +9,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import org.bits_waves.waves2017.Activities.Category_home_page;
+import org.bits_waves.waves2017.Activities.Mini_fest;
 import org.bits_waves.waves2017.Activities.NowLive;
 import org.bits_waves.waves2017.Activities.OurTeam;
 import org.bits_waves.waves2017.Activities.RegActivity;
+import org.bits_waves.waves2017.Manifest;
 import org.bits_waves.waves2017.R;
 import org.bits_waves.waves2017.Activities.WinnersActivity;
 
 public class ItemThreeFragment extends Fragment {
     public ImageButton ourTeam, regBut;
     private View myFragmentView;
-    private Button live,winner_but;
+    private Button live,winner_but,category,hello;
     public static ItemThreeFragment newInstance() {
         ItemThreeFragment fragment = new ItemThreeFragment();
         return fragment;
@@ -37,6 +40,9 @@ public class ItemThreeFragment extends Fragment {
         regBut = myFragmentView.findViewById(R.id.regBut);
         live = myFragmentView.findViewById(R.id.live);
         winner_but=myFragmentView.findViewById(R.id.winners);
+        category=myFragmentView.findViewById(R.id.category_mainpage);
+        hello=myFragmentView.findViewById(R.id.minifest_mainpage);
+
         ourTeam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +76,23 @@ public class ItemThreeFragment extends Fragment {
                 getActivity().overridePendingTransition(R.transition.up_to_down, R.transition.down_to_up);
             }
         });
+        category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), Category_home_page.class);
+                startActivity(intent);
+                getActivity().overridePendingTransition(R.transition.up_to_down, R.transition.down_to_up);
+            }
+        });
+        hello.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), Mini_fest.class);
+                startActivity(intent);
+                getActivity().overridePendingTransition(R.transition.up_to_down, R.transition.down_to_up);
+            }
+        });
+
         return myFragmentView;
     }
 }

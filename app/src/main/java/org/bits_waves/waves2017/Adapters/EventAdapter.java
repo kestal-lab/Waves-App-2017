@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import org.bits_waves.waves2017.Activities.Category;
 import org.bits_waves.waves2017.Activities.MainActivity;
 import org.bits_waves.waves2017.ListItems.EventItem;
 import org.bits_waves.waves2017.Activities.Events;
@@ -45,7 +46,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         final EventItem listItem = listItems.get(position);
 
         holder.head.setText(listItem.getHead());
@@ -76,6 +77,15 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
             holder.rel1.setBackgroundResource(R.color.red_event);
             holder.linearLayout.setBackgroundResource(R.color.blue_event);
         }
+
+        holder.event_category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it=new Intent(context, Category.class);
+                it.putExtra("category_heading",holder.event_category.getText().toString());
+                context.startActivity(it);
+            }
+        });
     }
 
     @Override

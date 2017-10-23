@@ -72,8 +72,8 @@ public class Day3 extends Fragment {
         listItems.add(listItem7);
         EventItem listItem8 = new EventItem("Poster Design","","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","C-301","Design");
         listItems.add(listItem8);
-        EventItem listItem5 = new EventItem("Strangely Familiar","Finals","http://bits-waves.org/static/main/images1/events/sf.JPG","13:00","Auditorium","Specials");
-        listItems.add(listItem5);
+        EventItem listItem57 = new EventItem("Strangely Familiar","Finals","http://bits-waves.org/static/main/images1/events/sf.JPG","13:00","Auditorium","Specials");
+        listItems.add(listItem57);
         EventItem listItem9 = new EventItem("Irshaad","Finals","http://bits-waves.org/static/main/images1/events/culturalgauntlet.JPG","12:00","Oustdoor Stage","Literary");
         listItems.add(listItem9);
         EventItem listItem10 = new EventItem("Artathon","Round 3",

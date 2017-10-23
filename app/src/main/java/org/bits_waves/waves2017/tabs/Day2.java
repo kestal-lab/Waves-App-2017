@@ -83,7 +83,7 @@ public class Day2 extends Fragment {
         listItems.add(listItem10);
         EventItem listItem11 = new EventItem("Artathon","Round2",
                 "http://bits-waves.org/static/main/images1/events/artathon.jpg",
-                "11:30","LT-4","Design");306
+                "11:30","LT-4","Design");
         listItems.add(listItem11);
         EventItem listItem12 = new EventItem("Hogathon","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","11:00","Marketing Pavilion","Specials");
         listItems.add(listItem12);
