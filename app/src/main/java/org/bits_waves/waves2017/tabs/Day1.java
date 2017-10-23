@@ -63,13 +63,15 @@ public class Day1 extends Fragment {
         listItems.add(listItem2);
         EventItem listItem3 = new EventItem("Contention","","http://bits-waves.org/static/main/images1/events/Contention.JPG","09:00","A & C Block","Literary");
         listItems.add(listItem3);
-        EventItem listItem5 = new EventItem("Vice Quiz","","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","LT-1","Quiz");
+        EventItem listItem5 = new EventItem("Vice Quiz","","http://bits-waves.org/static/main/images1/events/artathon.jpg","13:00","LT-1","Quiz");
         listItems.add(listItem5);
+        EventItem listItem22 = new EventItem("Strangely Familiar","Eliminations","http://bits-waves.org/static/main/images1/events/sf.JPG","12:00","LT-2","Specials");
+        listItems.add(listItem22);
         EventItem listItem6 = new EventItem("Nukkad Natak","Eliminations","http://bits-waves.org/static/main/images1/events/nukkadnatak.jpg","10:00","LT1,2Lawns","Drama");
         listItems.add(listItem6);
-        EventItem listItem7 = new EventItem("Artathon","Round 1","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","LT-4","Design");
+        EventItem listItem7 = new EventItem("Artathon","Round 1","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","LT-2","Design");
         listItems.add(listItem7);
-        EventItem listItem8 = new EventItem("Blind Art","","http://bits-waves.org/static/main/images1/events/blindart.JPG","10:00","KalaRoom","Design");
+        EventItem listItem8 = new EventItem("Blind Art","","http://bits-waves.org/static/main/images1/events/blindart.JPG","10:00","Kala Room","Design");
         listItems.add(listItem8);
         EventItem listItem9 = new EventItem("Fashion Design","","http://bits-waves.org/static/main/images1/events/artathon.jpg","10:00","C-304","Design");
         listItems.add(listItem9);
@@ -81,6 +83,10 @@ public class Day1 extends Fragment {
         listItems.add(listItem12);
         EventItem listItem13 = new EventItem("Sizzle","Round 1","http://bits-waves.org/static/main/images1/events/sizzle.jpg","12:00","CC","Dance");
         listItems.add(listItem13);
+        EventItem listItem23 = new EventItem("FashP","Eliminations",
+                "http://bits-waves.org/static/main/images1/events/fashp.jpg","10:30",
+                "CC","Specials");
+        listItems.add(listItem23);
         EventItem listItem14 = new EventItem("Fashion Design","Finals","http://bits-waves.org/static/main/images1/events/artathon.jpg","14:00","C-304","Design");
         listItems.add(listItem14);
         EventItem listItem15 = new EventItem("Searock","Semi Final","http://bits-waves.org/static/main/images1/events/searock.JPG","00:00","Auditorium","Music");

@@ -83,12 +83,12 @@ public class Day2 extends Fragment {
         listItems.add(listItem10);
         EventItem listItem11 = new EventItem("Artathon","Round2",
                 "http://bits-waves.org/static/main/images1/events/artathon.jpg",
-                "11:30","LT-4","Design");
+                "11:30","LT-4","Design");306
         listItems.add(listItem11);
-        EventItem listItem12 = new EventItem("Hogathon","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","11:00","MarketingPavilion","Specials");
+        EventItem listItem12 = new EventItem("Hogathon","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","11:00","Marketing Pavilion","Specials");
         listItems.add(listItem12);
         EventItem listItem13 = new EventItem("FashP","Finals",
-                "http://bits-waves.org/static/main/images1/events/fashp.jpg","14:00",
+                "http://bits-waves.org/static/main/images1/events/fashp.jpg","13:00",
                 "Auditorium","Specials");
         listItems.add(listItem13);
         EventItem listItem14 = new EventItem("Fashion Design","Finals","http://bits-waves.org/static/main/images1/events/artathon.jpg","14:00","C-304","Design");
@@ -108,9 +108,11 @@ public class Day2 extends Fragment {
                 "http://bits-waves.org/static/main/images1/events/indian_rock.jpg",
                 "00:00","Auditorium","Music");
         listItems.add(listItem19);
+        EventItem listItem23 = new EventItem("Strangely Familiar","Semi Finals","http://bits-waves.org/static/main/images1/events/sf.JPG","00:00","Outdoor Stage","Specials");
+        listItems.add(listItem23);
         EventItem listItem20 = new EventItem("Waves Ball","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","00:00","LT3,4Lawns","Specials");
         listItems.add(listItem20);
-        EventItem listItem21 = new EventItem("All Night Treasure Hunt","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","0100","MarketingPavilion","Specials");
+        EventItem listItem21 = new EventItem("All Night Treasure Hunt","","http://bits-waves.org/static/main/images1/events/rangmanch.jpg","0100","Marketing Pavilion","Specials");
         listItems.add(listItem21);
         EventItem listItem22 = new EventItem("Inverse","Finals",
                 "http://bits-waves.org/static/main/images1/events/culturalgauntlet.JPG","00:00","C-301","Literary");
